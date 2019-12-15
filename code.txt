@@ -1,0 +1,29 @@
+function seatcheck(){
+      document.getElementById(<?php echo $row['seatnum'] ?>).className='early'
+    }
+
+
+
+<input type="button" value="¿Ü/Á¶" onclick="document.getElementById('<?php echo $row['seatnum'] ?>').className='early'"/>
+
+
+while (<?php echo $row['seatnum'] ?>!=0){
+    document.getElementById('<?php echo $row['seatnum'] ?>').className='early'
+  }
+
+
+echo "<script> </script>"
+
+
+"<script> document.getElementById(".htmlspecialchars($row['seatnum']).").className=".'early'."</script>";
+
+echo $row['seatnum'];
+
+echo "<script> document.getElementById(".$row['seatnum'].").className=".'early'."</script>";
+
+<ol>
+  <?php
+  while($row = mysqli_fetch_assoc($result)){
+    echo '<li><a href="/index.php?id='.$row['id'].'">'.htmlspecialchars($row[htmlspecialchars('name')]).'</a></li>'."\n";
+  ?>
+</ol>

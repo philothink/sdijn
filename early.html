@@ -1,0 +1,40 @@
+<html>
+
+<div module="calendar_Modify">
+    <!--@css(/css/module/calendar/modify.css)-->
+    <div class="header">
+        <h1>Edit/Delete Post</h1>
+    </div>
+    <div class="content">
+        <table border="1" summary="">
+            <caption>Edit/Delete Calendar Post</caption>
+            <tr class="first">
+                <th scope="row">When</th>
+                <td>{$form.date} {$form.start_hour} {$form.start_minute} ~ {$form.end_hour} {$form.end_minute}</td>
+            </tr>
+            <tr>
+                <th scope="row">Title</th>
+                <td>{$form.title}</td>
+            </tr>
+            <tr>
+                <th scope="row">Description</th>
+                <td>{$form.contents}</td>
+            </tr>
+            <tr>
+                <th scope="row">Select</th>
+                <td>{$form.field}<br />{$field_info}</td>
+            </tr>
+            <tr>
+                <th scope="row">Read by Admin</th>
+                <td>{$form.confirm} <br /> NO: The site administarator has not read your message. <br /> YES: The site administarator has read your message.</td>
+            </tr>
+        </table>
+    </div>
+    <div class="btnArea">
+        <a href="#none" onclick="{$action_modify}"><img src="http://img.echosting.cafe24.com/skin/base_en_US/calendar/btn_modify.gif" alt="Edit" /></a>
+        <a href="#none" onclick="{$action_delete}"><img src="http://img.echosting.cafe24.com/skin/base_en_US/calendar/btn_delete.gif" alt="Delete" /></a>
+        <a href="#none" onclick="window.close()"><img src="http://img.echosting.cafe24.com/skin/base_en_US/calendar/btn_cancel.gif" alt="Cancel" /></a>
+    </div>
+</div>
+
+</html>
