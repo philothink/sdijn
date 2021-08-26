@@ -2,20 +2,19 @@
 <html>
   <head>
     <title>Audio test</title>
-  </head>
-      
+ 
+      <script>
   
- <script>
 $(document).ready(function(){
-   timerFunc(function(){alert("Hello")} ,20210826183000) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
+   timerFunc(function(){alert("Hello")} ,20210826183200) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
 });
    
    $(document).ready(function(){
-   timerFunc(function(){alert("Hello")} ,20210826183010) 
+   timerFunc(function(){alert("Hello")} ,20210826183210) 
 });
    
    $(document).ready(function(){
-   timerFunc(function(){alert("Hello")} ,20210826183020) 
+   timerFunc(function(){alert("Hello")} ,20210826183220) 
 });
 
 function timerFunc(func, dateTime){
@@ -36,8 +35,7 @@ function timerFunc(func, dateTime){
        setTimeout(func, timer);
     }
 }
- </script>
 
-
-
+</script>
+ </head>
 </html>
