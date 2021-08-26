@@ -12,12 +12,8 @@
   audio.play();
 }
       
-    </script>
-  </head>
-
-
 $(document).ready(function(){
-   timerFunc(function(){alert("Hello")} ,20210826180700) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
+   timerFunc(function(){alert("Hello")} ,20210826181100) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
 });
 
 function timerFunc(func, dateTime){
@@ -38,6 +34,7 @@ function timerFunc(func, dateTime){
        setTimeout(func, timer);
     }
 }
-
+    </script>
+  </head>
 
 <button onclick="playSound('https://philothink.github.io/sdijn/bell.mp3');"> Play </button>
