@@ -7,7 +7,15 @@
   
  <script>
 $(document).ready(function(){
-   timerFunc(playSound('https://philothink.github.io/sdijn/bell.mp3'))} ,20210826182600) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
+   timerFunc(function(){alert("Hello")} ,20210826183000) //인자로 넘겨주는 dateTime은 'yyyyMMddhhmiss"의 기본형
+});
+   
+   $(document).ready(function(){
+   timerFunc(function(){alert("Hello")} ,20210826183010) 
+});
+   
+   $(document).ready(function(){
+   timerFunc(function(){alert("Hello")} ,20210826183020) 
 });
 
 function timerFunc(func, dateTime){
