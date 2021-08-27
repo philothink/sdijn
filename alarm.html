@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Javascript Alarm Clock Demo
+    </title>
+    <link href="js-alarm-clock.css" rel="stylesheet">
+    <script src="js-alarm-clock.js"></script>
+  </head>
+  <body>
+    <!-- (A) CURRENT TIME -->
+
+  <table border=0 align="center">
+    <tr>
+      <td align=middle>
+    <div id="ctime">
+      <h1 class="header">THE CURRENT TIME</h1>
+      <div class="square">
+        <div class="digits" id="chr">00</div>
+        <div class="text">HR</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="cmin">00</div>
+        <div class="text">MIN</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="csec">00</div>
+        <div class="text">SEC</div>
+      </div>
+    </div>
+
+    <!-- (B) SET ALARM -->
+    <div id="tpick">
+      <h1 class="header">SET ALARM</h1>
+      <div id="tpick-h"></div>
+      <div id="tpick-m"></div>
+      <div id="tpick-s"></div>
+      <div>
+        <input type="button" value="Set" id="tset"/>
+        <input type="button" value="Reset" id="treset" disabled/>
+      </div>
+    </div>
+  </td>
+
+  <td id="schedule">
+
+  <ul>
+
+      <input type="checkbox" />
+      <span>08:25 국어 OMR 배부</span>
+<br>
+
+      <input type="checkbox" />
+      <span>08:35 국어 시험지 배부</span>
+<br>
+
+      <input type="checkbox" />
+      <span>08:40 국어 시험 시작</span>
+<br>
+<input type="checkbox" />
+<span>10:00 국어 시험 종료</span>
+<br>
+
+<input type="checkbox" />
+<span>10:20 수학 OMR 배부</span>
+<br>
+
+<input type="checkbox" />
+<span>10:25 수학 시험지 배부</span>
+<br>
+<input type="checkbox" />
+<span>10:30 수학 시험 시작</span>
+<br>
+
+<input type="checkbox" />
+<span>12:10 수학 시험 종료</span>
+<br>
+
+<input type="checkbox" />
+<span>13:00 영어 OMR 배부</span>
+<br>
+<input type="checkbox" />
+<span>13:05 영어 시험지 배부</span>
+<br>
+타종 없이 13:07 영어 듣기 시작
+<br>
+<input type="checkbox" />
+<span>14:20 영어 시험 종료</span>
+<br>
+
+<input type="checkbox" />
+<span>14:40 한국사 OMR 배부</span>
+<br>
+<input type="checkbox" />
+<span>14:45 한국사 시험지 배부</span>
+<br>
+
+<input type="checkbox" />
+<span>14:50 한국사 시험 시작</span>
+<br>
+
+<input type="checkbox" />
+<span>15:20 한국사 시험 종료</span>
+<br>
+<input type="checkbox" />
+<span>15:25 탐구 OMR 배부</span>
+<br>
+
+<input type="checkbox" />
+<span>15:30 탐구 시험지 배부</span>
+<br>
+
+<input type="checkbox" />
+<span>15:35 탐구1 시험 시작</span>
+<br>
+<input type="checkbox" />
+<span>16:05 탐구1 시험 종료</span>
+<br>
+
+<input type="checkbox" />
+<span>16:07 탐구2 시험 시작</span>
+<br>
+
+<input type="checkbox" />
+<span>16:37 탐구2 시험 종료</span>
+<br>
+<input type="checkbox" />
+<span>16:55 제2외국어 OMR 배부</span>
+<br>
+<input type="checkbox" />
+<span>17:00 제2외국어 시험지 배부</span>
+<br>
+<input type="checkbox" />
+<span>17:05 제2외국어 시험 시작</span>
+<br>
+<input type="checkbox" />
+<span>17:45 제2외국어 시험 종료</span>
+<br>
+  </ul>
+
+
+     </tr>
+  </table>
+
+    <!-- (C) ALARM SOUND -->
+    <audio id="alarm-sound" loop>
+      <source src="wake-up-sound.mp3" type="audio/mp3">
+    </audio>
+  </body>
+</html>
