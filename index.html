@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./src/bundle.js"></script>
+    <link rel="stylesheet" href="./stylesheet/application.css">
+    <link rel="stylesheet" href="./stylesheet/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+  </head>
+
+  <body>
+    <table>
+      <td>
+    <div class="clock-container">
+      <div class="clock-border">
+        <div id="clock" class="clock"></div>
+      </div>
+    </div>
+</td>
+  <td>
+    <div class="alarm-container">
+      <h2>정신바짝</h2>
+
+      <form id="alarm-form">
+        <div class="alarm-inputs">
+          <div class="input-container">
+            <input id="alarmHr" class="alarm-input" maxlength="2" placeholder="HR">
+            <input id="alarmMin" class="alarm-input" maxlength="2" placeholder="MIN">
+          </div>
+          <div id="alarm-period-btns" class="input-container">
+            <button id="am-btn" class="alarm-period active-period" type="button" value="AM">
+              AM
+            </button>
+            <button id="pm-btn" class="alarm-period" type="button" value="PM">
+              PM
+            </button>
+          </div>
+        </div>
+
+        <button class="alarm-submit-btn" form="alarm-form" type="submit" name="button">
+          SET ALARM
+        </button>
+      </form>
+
+      <div id="alarm-list" class="alarm-list-container">
+          <div class="alarm-el">No Alarms</div>
+      </div>
+    </div>
+  </td>
+
+    <td>
+          <H3>1교시 국어</H3>
+          08:25 OMR 배부
+          <br>08:35 시험지 배부
+          <br>08:40 시험 시작
+          <br>10:00 시험 종료
+          <H3>2교시 수학</H3>
+          10:20 OMR 배부
+          <br>10:25 시험지 배부
+          <br>10:30 시험 시작
+          <br>12:10 시험 종료
+          <H3>3교시 영어</H3>
+          13:00 OMR 배부
+          <br>13:05 시험지 배부
+          <br>타종 없이 13:07 듣기 시작
+          <br>14:20 시험 종료
+          <H3>4교시 한국사</H3>
+          14:40 OMR 배부
+          <br>14:45 시험지 배부
+          <br>14:50 시험 시작
+          <br>15:20 시험 종료
+          <H3>4교시 탐구</H3>
+          15:25 OMR 배부
+          <br>15:30 시험지 배부
+          <br>15:35 탐구1 시험 시작
+          <br>16:05 탐구1 시험 종료
+          <br>16:07 탐구2 시험 시작
+          <br>16:37 탐구2 시험 종료
+          <H3>5교시 제2외국어</H3>
+          16:55 OMR 배부
+          <br>17:00 시험지 배부
+          <br>17:05 시험 시작
+          <br>17:45 시험 종료
+        </td>
+  </table>
+</html>
